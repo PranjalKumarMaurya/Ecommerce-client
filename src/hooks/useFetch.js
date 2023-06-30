@@ -9,7 +9,7 @@ const useFetch = (endpoint) => {
         setData(res);
     };
 
-    useEffect( async () => {
+    useEffect( () => {
         makeApiCall();
     }, [endpoint]);
 

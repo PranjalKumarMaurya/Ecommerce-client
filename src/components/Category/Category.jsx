@@ -12,7 +12,7 @@ const Category = () => {
   return (
     <div className="category-main-content">
       <div className="layout">
-        <div className="category-title">Category Title</div>
+        <div className="category-title">{data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes?.title}</div>
         <Products innerTitle={true} products={data} />
       </div>
     </div>
